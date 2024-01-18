@@ -1,0 +1,125 @@
+@media only screen and (max-width: 767px) {
+    .row {
+        flex-direction: row; 
+        margin-right: 0;
+    }
+
+    input {
+        margin-right: 0; 
+    }
+    .container {
+        background-size: contain;}
+}
+
+
+
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: url(./images/abstract-aesthetic-autumn-fall-minimalist-background-vector.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 10px;
+}
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: #ffa500;
+    margin: 170px auto 40px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+.todo-app h2{
+    
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.todo-app h2 img{
+    width: 30px;
+    margin-left: 10px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    margin-right: 40px;
+    margin-bottom: 25px;
+    color: #edeef0;
+}
+input{
+    flex: 1;
+    border: none;
+    outline: none;
+    background: white;
+    padding: 10px;
+    font-weight: 14px;
+    border-radius: 12px;
+
+
+}
+button{
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    background:#804618;
+    color: black;
+    border-radius: 12px;
+    margin: 10px;
+    cursor: pointer;
+
+}
+ul li{
+    list-style:none ;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(./images/unchecked.png);
+   
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+
+}
+ul li.checked::before{
+    background-image: url(./images/checked.png);
+}
+ul li span{
+    position: absolute;
+    right:0 ;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: black;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background:#804618;
+
+}
